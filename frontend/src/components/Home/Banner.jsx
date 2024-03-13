@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -11,12 +12,15 @@ const Banner = () => {
         <h1 className="text-[2.7em] font-semibold font-merriweather text-white">
           MemorieNet
         </h1>
-        <p className="text-lg text-gray-300">
-          Write , Preserve and Relive Your Precious Memories
+        <p className="text-lg text-gray-300 max-w-[500px] text-center">
+          Write, Preserve, and Relive Your Most Cherished Memories : Travel back
+          in time
         </p>
-        <button className="text-white bg-blue-600 hover:bg-blue-700 rounded text-base flex items-center gap-2 mt-3 px-5 py-1.5">
-          Get Started <FaArrowRightLong />
-        </button>
+        <Link to="/register">
+          <button className="text-white bg-blue-600 hover:bg-blue-700 rounded text-base flex items-center gap-2 mt-3 px-5 py-1.5">
+            Get Started <FaArrowRightLong />
+          </button>
+        </Link>
       </div>
     </section>
   );
